@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #fff7e6; /* Couleur de fond chaude, typique pour un restaurant */
+    color: #333;
+}
+
+header {
+    background-color: hwb(0 18% 17%); /* Rouge intense pour un effet chaleureux */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #d32f2f;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes adaptatives */
+    gap: 20px; /* Espacement entre les plats */
+    margin: 20px 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Empile les éléments d'un plat verticalement */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item div {
+    max-width: 100%;
+}
+
+.btn-commande, .btn-reservation, .btn-contact, .btn-feedback {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-commande:hover, .btn-reservation:hover, .btn-contact:hover, .btn-feedback:hover {
+    background-color: #c2185b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form input, form select, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px; /* Taille des icônes */
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animation fluide */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Zoom léger au survol */
+    opacity: 0.8; /* Réduction de l'opacité pour un effet visuel */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d32f2f;
+    color: white;
+    margin-top: 20px;
+}
